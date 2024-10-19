@@ -1,0 +1,97 @@
+Anthem
+Apache Junction
+Arizona City
+Avondale
+Avra Valley
+Benson
+Bisbee
+Buckeye
+Bullhead City
+Camp Verde
+Casa Grande
+Casas Adobes
+Catalina
+Catalina Foothills
+Cave Creek
+Chandler
+Chino Valley
+Coolidge
+Corona de Tucson
+Cottonwood
+Doney Park
+Douglas
+Drexel Heights
+El Mirage
+Eloy
+Flagstaff
+Florence
+Flowing Wells
+Fort Mohave
+Fortuna Foothills
+Fountain Hills
+Gilbert
+Glendale
+Globe
+Gold Canyon
+Golden Valley
+Goodyear
+Green Valley
+Guadalupe
+Holbrook
+Kayenta
+Kingman
+Lake Havasu City
+Litchfield Park
+Marana
+Maricopa
+Mesa
+New Kingman-Butler
+New River
+Nogales
+Oro Valley
+Page
+Paradise Valley
+Paulden
+Payson
+Peoria
+Phoenix
+Picture Rocks
+Prescott
+Prescott Valley
+Queen Creek
+Rincon Valley
+Rio Rico
+Saddlebrooke
+Safford
+Sahuarita
+San Luis
+San Tan Valley
+Scottsdale
+Sedona
+Show Low
+Sierra Vista
+Sierra Vista Southeast
+Snowflake
+Somerton
+South Tucson
+Summit
+Sun City
+Sun City West
+Sun Lakes
+Surprise
+Tanque Verde
+Tempe
+Three Points
+Tolleson
+Tuba City
+Tucson
+Tucson Estates
+Vail
+Valencia West
+Verde Village
+Village of Oak Creek (Big Park)
+Wickenburg
+Williamson
+Winslow
+Youngtown
+Yuma

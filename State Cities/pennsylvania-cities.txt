@@ -1,0 +1,257 @@
+Aliquippa
+Allentown
+Allison Park
+Altoona
+Ambler
+Ambridge
+Ancient Oaks
+Archbald
+Ardmore
+Arlington Heights
+Arnold
+Audubon
+Baldwin
+Bangor
+Beaver Falls
+Bellefonte
+Bellevue
+Berwick
+Bethel Park
+Bethlehem
+Birdsboro
+Blakely
+Blandon
+Bloomsburg
+Blue Bell
+Bradford
+Brentwood
+Bridgeville
+Bristol
+Brookhaven
+Broomall
+Butler
+California
+Camp Hill
+Canonsburg
+Carbondale
+Carlisle
+Carnegie
+Carnot-Moon
+Castle Shannon
+Catasauqua
+Chambersburg
+Chester
+Clairton
+Clarion
+Clarks Summit
+Clearfield
+Clifton Heights
+Coatesville
+Collegeville
+Collingdale
+Colonial Park
+Columbia
+Connellsville
+Conshohocken
+Coraopolis
+Corry
+Crafton
+Croydon
+Darby
+Dickson City
+Dormont
+Downingtown
+Doylestown
+Drexel Hill
+DuBois
+Dunmore
+Duquesne
+East Stroudsburg
+East York
+Easton
+Economy
+Edinboro
+Elizabethtown
+Ellwood City
+Emmaus
+Enola
+Ephrata
+Erie
+Exeter
+Fairless Hills
+Farrell
+Fernway
+Folcroft
+Folsom
+Forest Hills
+Fort Washington
+Fox Chapel
+Franklin
+Franklin Park
+Fullerton
+Gettysburg
+Glenolden
+Glenshaw
+Glenside
+Greensburg
+Greenville
+Grove City
+Hanover
+Harleysville
+Harrisburg
+Hatboro
+Hazleton
+Hellertown
+Hermitage
+Hershey
+Hollidaysburg
+Homeacre-Lyndora
+Horsham
+Huntingdon
+Indiana
+Jeannette
+Jefferson Hills
+Johnstown
+Kennett Square
+King of Prussia
+Kingston
+Kulpsville
+Kutztown
+Lancaster
+Lansdale
+Lansdowne
+Latrobe
+Lebanon
+Lehighton
+Leola
+Levittown
+Lewisburg
+Lewistown
+Linglestown
+Lionville
+Lititz
+Lock Haven
+Lower Allen
+Lower Burrell
+Maple Glen
+McKees Rocks
+McKeesport
+Meadville
+Mechanicsburg
+Media
+Middletown
+Millersville
+Milton
+Monaca
+Monessen
+Monroeville
+Montgomeryville
+Moosic
+Morrisville
+Mount Carmel
+Mount Joy
+Mountain Top
+Munhall
+Murrysville
+Nanticoke
+Nazareth
+New Brighton
+New Castle
+New Cumberland
+New Holland
+New Kensington
+Norristown
+Northampton
+Northwest Harborcreek
+Norwood
+Oakmont
+Oil City
+Old Forge
+Olyphant
+Oreland
+Oxford
+Palmerton
+Palmyra
+Paoli
+Park Forest Village
+Parkville
+Paxtonia
+Penn Wynne
+Perkasie
+Philadelphia
+Phoenixville
+Pittsburgh
+Pittston
+Pleasant Hills
+Plum
+Plymouth
+Plymouth Meeting
+Pottstown
+Pottsville
+Progress
+Prospect Park
+Punxsutawney
+Quakertown
+Reading
+Red Lion
+Richboro
+Ridley Park
+Sanatoga
+Sayre
+Schlusser
+Schuylkill Haven
+Scranton
+Selinsgrove
+Shamokin
+Shanor-Northvue
+Sharon
+Sharon Hill
+Shenandoah
+Shillington
+Shiloh
+Shippensburg
+Somerset
+Souderton
+South Park Township
+South Williamsport
+St. Marys
+State College
+Steelton
+Stroudsburg
+Sugarcreek
+Sunbury
+Swarthmore
+Swissvale
+Swoyersville
+Tamaqua
+Taylor
+Titusville
+Trooper
+Turtle Creek
+Tyrone
+Uniontown
+Upper St. Clair
+Vandergrift
+Village Green-Green Ridge
+Warren
+Washington
+Waynesboro
+Weigelstown
+Wescosville
+West Chester
+West Mifflin
+West View
+Westmont
+White Oak
+Whitehall
+Wilkes-Barre
+Wilkinsburg
+Williamsport
+Willow Grove
+Willow Street
+Wilson
+Woodlyn
+Wyndmoor
+Wyomissing
+Yeadon
+York
