@@ -1,4 +1,3 @@
-Anthem
 Apache Junction
 Arizona City
 Avondale
@@ -24,14 +23,12 @@ Drexel Heights
 El Mirage
 Eloy
 Flagstaff
-Florence
 Flowing Wells
 Fort Mohave
 Fortuna Foothills
 Fountain Hills
 Gilbert
 Glendale
-Globe
 Gold Canyon
 Golden Valley
 Goodyear
@@ -49,12 +46,10 @@ New Kingman-Butler
 New River
 Nogales
 Oro Valley
-Page
 Paradise Valley
 Paulden
 Payson
 Peoria
-Phoenix
 Picture Rocks
 Prescott
 Prescott Valley
@@ -68,28 +63,22 @@ San Luis
 San Tan Valley
 Scottsdale
 Sedona
-Show Low
 Sierra Vista
 Sierra Vista Southeast
-Snowflake
 Somerton
 South Tucson
-Summit
 Sun City
 Sun City West
 Sun Lakes
-Surprise
 Tanque Verde
 Tempe
-Three Points
 Tolleson
 Tuba City
 Tucson
 Tucson Estates
-Vail
 Valencia West
 Verde Village
-Village of Oak Creek (Big Park)
+Village of Oak
 Wickenburg
 Williamson
 Winslow

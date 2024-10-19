@@ -20,7 +20,6 @@ Brighton
 Buena Vista
 Burton
 Byron Center
-Cadillac
 Center Line
 Charlotte
 Clawson
@@ -46,8 +45,6 @@ Farmington Hills
 Fenton
 Ferndale
 Flat Rock
-Flint
-Flushing
 Forest Hills
 Fraser
 Freeland
@@ -70,8 +67,6 @@ Hazel Park
 Highland Park
 Hillsdale
 Holland
-Holly
-Holt
 Houghton
 Howell
 Hudsonville
@@ -133,9 +128,7 @@ Romulus
 Roseville
 Royal Oak
 Saginaw
-Saline
 Sault Ste. Marie
-Shields
 South Lyon
 South Monroe
 Southfield
@@ -156,7 +149,6 @@ Three Rivers
 Traverse City
 Trenton
 Troy
-Walker
 Walled Lake
 Warren
 Waverly
