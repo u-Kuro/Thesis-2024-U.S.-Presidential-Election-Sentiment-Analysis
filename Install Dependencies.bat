@@ -8,7 +8,7 @@ python -m ensurepip
 pip install nltk "ffmpeg-python" "openai-whisper" pandas pytubefix bertopic "scikit-learn"
 
 :: Install other dependencies
-pip install torch tqdm
+pip install torch tqdm ipywidgets
 
 :: Install BERTopic dependencies
 pip install "numpy<2" "tf-keras"
