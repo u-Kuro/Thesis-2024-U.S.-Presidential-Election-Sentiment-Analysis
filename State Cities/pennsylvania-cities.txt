@@ -111,7 +111,6 @@ Jeannette
 Jefferson Hills
 Johnstown
 Kennett Square
-King of Prussia
 Kingston
 Kulpsville
 Kutztown
@@ -168,7 +167,6 @@ Oxford
 Palmerton
 Palmyra
 Paoli
-Park Forest Village
 Parkville
 Paxtonia
 Penn Wynne
@@ -203,7 +201,6 @@ Shiloh
 Shippensburg
 Somerset
 Souderton
-South Park Township
 South Williamsport
 St. Marys
 State College

@@ -15,7 +15,6 @@ Cave Creek
 Chandler
 Chino Valley
 Coolidge
-Corona de Tucson
 Cottonwood
 Doney Park
 Douglas
@@ -37,7 +36,6 @@ Guadalupe
 Holbrook
 Kayenta
 Kingman
-Lake Havasu City
 Litchfield Park
 Marana
 Maricopa
@@ -60,15 +58,12 @@ Saddlebrooke
 Safford
 Sahuarita
 San Luis
-San Tan Valley
 Scottsdale
 Sedona
 Sierra Vista
-Sierra Vista Southeast
 Somerton
 South Tucson
 Sun City
-Sun City West
 Sun Lakes
 Tanque Verde
 Tempe
@@ -78,7 +73,6 @@ Tucson
 Tucson Estates
 Valencia West
 Verde Village
-Village of Oak
 Wickenburg
 Williamson
 Winslow

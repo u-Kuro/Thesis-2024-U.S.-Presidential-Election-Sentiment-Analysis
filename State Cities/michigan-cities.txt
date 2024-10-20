@@ -32,7 +32,6 @@ Dearborn
 Dearborn Heights
 Detroit
 Dowagiac
-East Grand Rapids
 East Lansing
 Eastpointe
 Eastwood
@@ -56,9 +55,6 @@ Grand Rapids
 Grandville
 Greenville
 Grosse Pointe
-Grosse Pointe Farms
-Grosse Pointe Park
-Grosse Pointe Woods
 Hamtramck
 Harper Woods
 Haslett
@@ -135,7 +131,6 @@ Southfield
 Southgate
 Springfield
 St. Clair
-St. Clair Shores
 St. Johns
 St. Joseph
 St. Louis
