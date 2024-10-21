@@ -5,13 +5,13 @@ echo Starting Installation...
 python -m ensurepip
 
 :: Install main dependencies
-pip install nltk "ffmpeg-python" "openai-whisper" pandas pytubefix bertopic "scikit-learn"
+pip install torch "ffmpeg-python" "openai-whisper" pytubefix nltk pandas transformers bertopic "scikit-learn"
 
 :: Install other dependencies
-pip install torch tqdm jupyter ipywidgets
+pip install tqdm jupyter ipywidgets
 
 :: Install BERTopic dependencies
 pip install "numpy<2" "tf-keras"
 
-echo Installation completed.
+echo Installation Completed.
 pause
