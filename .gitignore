@@ -5,7 +5,7 @@
 
 # Local (u-kuro)
 /Ignored/
+/.idea/
 Test.ipynb
 .Open Jupyter Lab.bat
-Collect-YouTube-Info-from-Transcript-Files.ipynb
 .DS_Store
