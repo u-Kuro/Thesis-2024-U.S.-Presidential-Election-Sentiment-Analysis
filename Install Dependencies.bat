@@ -5,6 +5,7 @@ python -m ensurepip
 
 :: Upgrade pip and install core build dependencies
 pip install pip==24.0
+pip install jupyterlab==3.6.8
 pip install setuptools==68.0.0
 pip install wheel==0.42.0
 pip install cython==3.0.11
@@ -26,7 +27,7 @@ pip install pytubefix==8.3.2
 pip install youtube-search-python==1.6.6
 
 :: Download spacy model
-pip install en-core-web-lg==2.1.0
+pip install "en_core_web_lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.1.0/en_core_web_lg-2.1.0.tar.gz"
 
 echo Installation Completed.
 pause
