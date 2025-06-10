@@ -1,17 +1,14 @@
-/Video/
-/Audio/
+/node_modules/
+package-lock.json
+package.json
+
+/2) Video to Text Pipeline/Video/
+/2) Video to Text Pipeline/Audio/
 **/.ipynb_checkpoints/
-/YouTube URL Collection/
-Transcription/*
-!Transcription/Arizona/
-!Transcription/Michigan/
-!Transcription/Pennsylvania/
-!Transcription/Extra (not included in any [used urls.csv])/
 
 # Local (u-kuro)
 /Ignored/
 /.idea/
 /venv/
-Test.ipynb
 .Open Jupyter Lab.bat
 .DS_Store
