@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 16px;
+            font-family: inherit;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .char-counter {
+            text-align: right;
+            margin-top: 5px;
+            color: #888;
+            font-size: 14px;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .loading {
+            display: none;
+            margin-top: 20px;
+            color: #667eea;
+        }
+        
+        .loading .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            display: none;
+        }
+        
+        .result.positive {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+        
+        .result.negative {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+        
+        .result.neutral {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #333;
+        }
+        
+        .result h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .result p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .error {
+            background: #ffe6e6;
+            border: 1px solid #ff9999;
+            color: #cc0000;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎭 Sentiment Analysis</h1>
+        <p class="subtitle">Enter your text below to analyze its sentiment</p>
+        
+        <form id="sentimentForm">
+            <textarea 
+                id="textInput" 
+                placeholder="Type your text here... (e.g., 'I love this product!', 'This is terrible', 'It's okay')"
+                maxlength="1000"
+            ></textarea>
+            <div class="char-counter">
+                <span id="charCount">0</span>/1000 characters
+            </div>
+            
+            <button type="submit" id="analyzeBtn">
+                Analyze Sentiment
+            </button>
+        </form>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <span>Analyzing sentiment...</span>
+        </div>
+        
+        <div class="result" id="result">
+            <h3 id="sentimentLabel"></h3>
+            <p id="sentimentDescription"></p>
+        </div>
+        
+        <div class="error" id="error"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('sentimentForm');
+        const textInput = document.getElementById('textInput');
+        const charCount = document.getElementById('charCount');
+        const analyzeBtn = document.getElementById('analyzeBtn');
+        const loading = document.getElementById('loading');
+        const result = document.getElementById('result');
+        const error = document.getElementById('error');
+        
+        // Character counter
+        textInput.addEventListener('input', function() {
+            const count = this.value.length;
+            charCount.textContent = count;
+            
+            if (count > 950) {
+                charCount.style.color = '#ff6b6b';
+            } else {
+                charCount.style.color = '#888';
+            }
+        });
+        
+        // Form submission
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const text = textInput.value.trim();
+            if (!text) {
+                showError('Please enter some text to analyze');
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult(data);
+                } else {
+                    showError(data.error || 'An error occurred');
+                }
+                
+            } catch (err) {
+                showError('Network error. Please try again.');
+            }
+        });
+        
+        function showLoading() {
+            analyzeBtn.disabled = true;
+            loading.style.display = 'block';
+            result.style.display = 'none';
+            error.style.display = 'none';
+        }
+        
+        function showResult(data) {
+            analyzeBtn.disabled = false;
+            loading.style.display = 'none';
+            
+            const sentimentLabel = document.getElementById('sentimentLabel');
+            const sentimentDescription = document.getElementById('sentimentDescription');
+            
+            sentimentLabel.textContent = data.sentiment_label;
+            
+            // Set description based on sentiment
+            let description = '';
+            let className = '';
+            
+            switch(data.sentiment_label.toLowerCase()) {
+                case 'positive':
+                    description = 'Great! This text expresses positive sentiment 😊';
+                    className = 'positive';
+                    break;
+                case 'negative':
+                    description = 'This text expresses negative sentiment 😔';
+                    className = 'negative';
+                    break;
+                case 'neutral':
+                    description = 'This text has neutral sentiment 😐';
+                    className = 'neutral';
+                    break;
+            }
+            
+            sentimentDescription.textContent = description;
+            result.className = 'result ' + className;
+            result.style.display = 'block';
+        }
+        
+        function showError(message) {
+            analyzeBtn.disabled = false;
+            loading.style.display = 'none';
+            result.style.display = 'none';
+            
+            error.textContent = message;
+            error.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   let text = '', resp = null, loading = false;
 
   async function analyze() {
