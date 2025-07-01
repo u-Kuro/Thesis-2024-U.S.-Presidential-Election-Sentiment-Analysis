@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #314ed5 0%, #ba1b1b 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -62,15 +62,8 @@
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
         
-        .char-counter {
-            text-align: right;
-            margin-top: 5px;
-            color: #888;
-            font-size: 14px;
-        }
-        
         button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ba1b1b 0%, #314ed5 100%);
             color: white;
             border: none;
             padding: 15px 40px;
@@ -124,17 +117,17 @@
         }
         
         .result.positive {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #ba1b1b -200%, #314ed5 50%, #ba1b1b 200%);
             color: white;
         }
         
         .result.negative {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #314ed5 -200%, #ba1b1b 50%, #314ed5 200%);
             color: white;
         }
         
         .result.neutral {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            background: linear-gradient(135deg, #ba1b1b -200%, #f5f5f5 50%, #314ed5 200%);
             color: #333;
         }
         
@@ -177,12 +170,8 @@
         <form id="sentimentForm">
             <textarea 
                 id="textInput" 
-                placeholder="Type your text here... (e.g., 'I love this product!', 'This is terrible', 'It's okay')"
-                maxlength="1000"
+                placeholder="Type your text here..."
             ></textarea>
-            <div class="char-counter">
-                <span id="charCount">0</span>/1000 characters
-            </div>
             
             <button type="submit" id="analyzeBtn">
                 Analyze Sentiment
@@ -205,24 +194,11 @@
     <script>
         const form = document.getElementById('sentimentForm');
         const textInput = document.getElementById('textInput');
-        const charCount = document.getElementById('charCount');
         const analyzeBtn = document.getElementById('analyzeBtn');
         const loading = document.getElementById('loading');
         const result = document.getElementById('result');
         const error = document.getElementById('error');
-        
-        // Character counter
-        textInput.addEventListener('input', function() {
-            const count = this.value.length;
-            charCount.textContent = count;
-            
-            if (count > 950) {
-                charCount.style.color = '#ff6b6b';
-            } else {
-                charCount.style.color = '#888';
-            }
-        });
-        
+                
         // Form submission
         form.addEventListener('submit', async function(e) {
             e.preventDefault();

@@ -11,10 +11,9 @@ tokenizer = None
 # Replace with your Hugging Face model name
 MODEL_NAME = "u-kuro/sentiment-model"  # Change this!
 
-def load_model():
+with app.app_context():
     """Load model and tokenizer once"""
-    global model, tokenizer
-    if model is None:
+    if model is None or tokenizer is None:
         print("Loading model...")
         tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
         model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
@@ -22,9 +21,7 @@ def load_model():
         print("Model loaded successfully!")
 
 def get_sentiment_score(text):
-    """Get sentiment score from text"""
-    load_model()
-    
+    """Get sentiment score from text"""    
     with torch.no_grad():
         encoding = tokenizer(
             text,
