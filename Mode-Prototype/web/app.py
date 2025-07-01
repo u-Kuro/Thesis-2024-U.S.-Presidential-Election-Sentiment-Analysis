@@ -11,14 +11,15 @@ tokenizer = None
 # Replace with your Hugging Face model name
 MODEL_NAME = "u-kuro/sentiment-model"  # Change this!
 
-with app.app_context():
+if __name__ == '__main__':
     """Load model and tokenizer once"""
-    if model is None or tokenizer is None:
-        print("Loading model...")
-        tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-        model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
-        model.eval()
-        print("Model loaded successfully!")
+    with app.app_context():
+        if model is None or tokenizer is None:
+            print("Loading model...")
+            tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+            model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+            model.eval()
+            print("Model loaded successfully!")
 
 def get_sentiment_score(text):
     """Get sentiment score from text"""    
@@ -74,4 +75,4 @@ def home():
     return render_template("index.html")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    app.run(host='0.0.0.0', debug=True)
