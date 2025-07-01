@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.9"
+
+[packages]
+Flask = "==3.0.3"
+transformers = "==4.46.3"
+torch = "==2.4.1"
