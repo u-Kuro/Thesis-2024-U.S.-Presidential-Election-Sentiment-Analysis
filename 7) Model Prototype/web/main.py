@@ -2,22 +2,16 @@ from flask import Flask, request, jsonify, render_template
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
-print("here")
 app = Flask(__name__)
 
-print("here2")
 # Initialize model and tokenizer as None
 model = None
 tokenizer = None
 
-print("here3")
 # Replace with your Hugging Face model name
 MODEL_NAME = "u-kuro/sentiment-model"  # Change this!
 
-print("here4")
 def load_model():
-    
-    print("here5")
     """Load model and tokenizer once"""
     global model, tokenizer
     if model is None:
@@ -59,7 +53,6 @@ def get_sentiment_label(score):
 def predict():
     try:
         data = request.json
-        print(data)
         text = data.get('text', '').strip()
         
         if not text:
