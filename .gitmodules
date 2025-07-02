@@ -1,0 +1,3 @@
+[submodule "Model-Prototype/web"]
+	path = Model-Prototype/web
+	url = https://huggingface.co/spaces/u-kuro/sentiment-predictor
