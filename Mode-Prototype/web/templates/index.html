@@ -22,6 +22,9 @@
         }
         
         .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -29,22 +32,28 @@
             max-width: 600px;
             width: 100%;
             text-align: center;
+            user-select: none;
         }
         
-        h1 {
+        .title {
             color: #333;
-            margin-bottom: 30px;
             font-size: 2.5rem;
             font-weight: 700;
         }
         
         .subtitle {
             color: #666;
-            margin-bottom: 30px;
             font-size: 1.1rem;
         }
+
+        .sentiment-form {
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 1fr auto;
+            grid-template-columns: 1fr;
+        }
         
-        textarea {
+        .text-input {
             width: 100%;
             min-height: 120px;
             padding: 15px;
@@ -56,13 +65,13 @@
             transition: border-color 0.3s;
         }
         
-        textarea:focus {
+        text-input:focus {
             outline: none;
             border-color: #667eea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
         
-        button {
+        .submit {
             background: linear-gradient(135deg, #ba1b1b 0%, #314ed5 100%);
             color: white;
             border: none;
@@ -70,27 +79,52 @@
             font-size: 18px;
             border-radius: 50px;
             cursor: pointer;
-            margin-top: 20px;
             transition: transform 0.2s, box-shadow 0.2s;
             font-weight: 600;
+            width: fit-content;
+            justify-self: center;
         }
         
-        button:hover {
+        .submit:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
         
-        button:disabled {
+        .submit:disabled {
             background: #ccc;
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
         }
+
+        .result-container {
+            height: 100px;
+            position: relative;
+        }
+
+        .result-container > * {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-height: 100px;
+            overflow: clip;
+        }
+
+        .result-container:not(:has(> :not(.hide))) {
+            display: none !important;
+        }
         
         .loading {
-            display: none;
-            margin-top: 20px;
             color: #667eea;
+            flex-direction: row;
+            height: 30px;
+            gap: 5px;
         }
         
         .loading .spinner {
@@ -101,7 +135,6 @@
             border-top: 3px solid #667eea;
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin-right: 10px;
         }
         
         @keyframes spin {
@@ -110,10 +143,12 @@
         }
         
         .result {
-            margin-top: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             padding: 20px;
             border-radius: 12px;
-            display: none;
         }
         
         .result.positive {
@@ -133,7 +168,6 @@
         
         .result h3 {
             font-size: 1.5rem;
-            margin-bottom: 10px;
         }
         
         .result p {
@@ -147,8 +181,6 @@
             color: #cc0000;
             padding: 15px;
             border-radius: 8px;
-            margin-top: 20px;
-            display: none;
         }
         
         @media (max-width: 600px) {
@@ -156,60 +188,86 @@
                 padding: 30px 20px;
             }
             
-            h1 {
+            .title {
                 font-size: 2rem;
             }
+
+            .subtitle {
+                font-size: 0.88rem;
+            }
+
+            .text-input {
+                font-size: 12.44px;
+            }
+
+            .submit {
+                font-size: 14px;
+            }
+
+            .sentimentLabel {
+                font-size: 1.2rem;
+            }
+
+            .sentimentDescription {
+                font-size: 0.88rem;
+            }
+        }
+
+        .hide {
+            display: none !important;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎭 Sentiment Analysis</h1>
+        <h1 class="title">🎭 Sentiment Analysis</h1>
         <p class="subtitle">Enter your text below to analyze its sentiment</p>
         
-        <form id="sentimentForm">
-            <textarea 
-                id="textInput" 
+        <form class="sentiment-form" id="sentiment-form">
+            <textarea
+                class="text-input"
+                id="text-input" 
                 placeholder="Type your text here..."
             ></textarea>
             
-            <button type="submit" id="analyzeBtn">
+            <button class="submit" type="submit" id="submit-btn">
                 Analyze Sentiment
             </button>
         </form>
         
-        <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <span>Analyzing sentiment...</span>
+        <div class="result-container">
+            <div class="loading hide" id="loading">
+                <div class="spinner"></div>
+                <span>Analyzing sentiment...</span>
+            </div>
+            <div class="result hide" id="result">
+                <h3 id="sentimentLabel"></h3>
+                <p id="sentimentDescription"></p>
+            </div>
+            <div class="error hide" id="error"></div>
         </div>
-        
-        <div class="result" id="result">
-            <h3 id="sentimentLabel"></h3>
-            <p id="sentimentDescription"></p>
-        </div>
-        
-        <div class="error" id="error"></div>
     </div>
 
     <script>
-        const form = document.getElementById('sentimentForm');
-        const textInput = document.getElementById('textInput');
-        const analyzeBtn = document.getElementById('analyzeBtn');
+        const form = document.getElementById('sentiment-form');
+        const textInput = document.getElementById('text-input');
+        const analyzeBtn = document.getElementById('submit-btn');
         const loading = document.getElementById('loading');
         const result = document.getElementById('result');
         const error = document.getElementById('error');
                 
-        // Form submission
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
+            
+            analyzeBtn.disabled = true;
+            textInput.focus();
+            showLoading();
             
             const text = textInput.value.trim();
             if (!text) {
                 showError('Please enter some text to analyze');
                 return;
             }
-            
-            showLoading();
             
             try {
                 const response = await fetch('/predict', {
@@ -228,28 +286,27 @@
                     showError(data.error || 'An error occurred');
                 }
                 
-            } catch (err) {
+            } catch (error) {
+                console.error(error);
                 showError('Network error. Please try again.');
             }
         });
         
         function showLoading() {
-            analyzeBtn.disabled = true;
-            loading.style.display = 'block';
-            result.style.display = 'none';
-            error.style.display = 'none';
+            hide(result);
+            hide(error);
+
+            show(loading);
         }
         
         function showResult(data) {
-            analyzeBtn.disabled = false;
-            loading.style.display = 'none';
+            hide(loading);
             
             const sentimentLabel = document.getElementById('sentimentLabel');
             const sentimentDescription = document.getElementById('sentimentDescription');
             
             sentimentLabel.textContent = data.sentiment_label;
             
-            // Set description based on sentiment
             let description = '';
             let className = '';
             
@@ -270,16 +327,26 @@
             
             sentimentDescription.textContent = description;
             result.className = 'result ' + className;
-            result.style.display = 'block';
+            show(result);
+
+            analyzeBtn.disabled = false;
         }
         
         function showError(message) {
-            analyzeBtn.disabled = false;
-            loading.style.display = 'none';
-            result.style.display = 'none';
+            hide(loading);
             
             error.textContent = message;
-            error.style.display = 'block';
+            show(error);
+
+            analyzeBtn.disabled = false;
+        }
+
+        function show(element) {
+            element.classList.remove('hide');
+        }
+
+        function hide(element) {
+            element.classList.add('hide');
         }
     </script>
 </body>

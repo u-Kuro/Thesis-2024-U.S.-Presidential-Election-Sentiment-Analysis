@@ -2,18 +2,16 @@ import os, torch
 from flask import Flask, request, jsonify, render_template
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from dotenv import load_dotenv
-from fastapi import FastAPI
 
 load_dotenv()
 MODEL_NAME = os.environ['MODEL_NAME']
 TOKEN = os.environ['HF_TOKEN']
 
-ismain = __name__ == '__main__'
-app = FastAPI()
+app = Flask(__name__)
 model = None
 tokenizer = None
 
-if ismain and (model is None or tokenizer is None):
+if model is None or tokenizer is None:
     with app.app_context():
         print("Loading model...")
         tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, token=TOKEN)
@@ -33,6 +31,7 @@ def get_sentiment_score(text):
         
         outputs = model(**encoding)
         _, predicted = torch.max(outputs.logits, 1)
+
         sentiment_score = int((predicted - 1).cpu().numpy()[0])
         
         return sentiment_score
@@ -50,7 +49,7 @@ def predict():
     try:
         data = request.json
         text = data.get('text', '').strip()
-        
+                
         if not text:
             return jsonify({'error': 'Please provide text to analyze'}), 400
         
@@ -71,5 +70,5 @@ def predict():
 def home():
     return render_template("index.html")
 
-if ismain:
+if __name__ == '__main__':
     app.run(host="0.0.0.0", port=7860, debug=True)
