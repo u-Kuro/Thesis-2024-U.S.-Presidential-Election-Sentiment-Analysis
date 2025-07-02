@@ -1,28 +1,27 @@
+import os, torch
 from flask import Flask, request, jsonify, render_template
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
+from dotenv import load_dotenv
+from fastapi import FastAPI
 
-app = Flask(__name__)
+load_dotenv()
+MODEL_NAME = os.environ['MODEL_NAME']
+TOKEN = os.environ['HF_TOKEN']
 
-# Initialize model and tokenizer as None
+ismain = __name__ == '__main__'
+app = FastAPI()
 model = None
 tokenizer = None
 
-# Replace with your Hugging Face model name
-MODEL_NAME = "u-kuro/sentiment-model"  # Change this!
-
-if __name__ == '__main__':
-    """Load model and tokenizer once"""
+if ismain and (model is None or tokenizer is None):
     with app.app_context():
-        if model is None or tokenizer is None:
-            print("Loading model...")
-            tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-            model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
-            model.eval()
-            print("Model loaded successfully!")
+        print("Loading model...")
+        tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, token=TOKEN)
+        model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, token=TOKEN)
+        model.eval()
+        print("Model loaded successfully!")
 
 def get_sentiment_score(text):
-    """Get sentiment score from text"""    
     with torch.no_grad():
         encoding = tokenizer(
             text,
@@ -39,7 +38,6 @@ def get_sentiment_score(text):
         return sentiment_score
 
 def get_sentiment_label(score):
-    """Convert sentiment score to label"""
     sentiment_map = {
         -1: "Negative",
         0: "Neutral", 
@@ -56,7 +54,6 @@ def predict():
         if not text:
             return jsonify({'error': 'Please provide text to analyze'}), 400
         
-        # Get prediction
         sentiment_score = get_sentiment_score(text)
         sentiment_label = get_sentiment_label(sentiment_score)
         
@@ -74,5 +71,5 @@ def predict():
 def home():
     return render_template("index.html")
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+if ismain:
+    app.run(host="0.0.0.0", port=7860, debug=True)
