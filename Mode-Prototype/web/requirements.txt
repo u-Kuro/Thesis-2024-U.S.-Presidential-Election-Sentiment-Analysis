@@ -1,4 +1,5 @@
-gunicorn
-Flask
-transformers
-torch
+gunicorn==23.0.0
+Flask==3.0.3
+transformers==4.46.3
+torch==2.4.1
+python-dotenv==1.0.1
