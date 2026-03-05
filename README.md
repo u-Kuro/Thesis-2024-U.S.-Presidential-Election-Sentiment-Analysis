@@ -16,18 +16,24 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 ## 📄 Thesis Document
 
 <a href="./Thesis-Document.pdf#page=1" target="_blank"><img src="./screenshots/thesis-page-01.png" alt="Thesis Page 1"></a>
-
-<details>
-<summary><b>📖 Show More</b></summary>
 <br/>
-<a href="./Thesis-Document.pdf#page=2" target="_blank"><img src="./screenshots/thesis-page-02.png" alt="Thesis Page 2"></a>
-<a href="./Thesis-Document.pdf#page=3" target="_blank"><img src="./screenshots/thesis-page-03.png" alt="Thesis Page 3"></a>
-<a href="./Thesis-Document.pdf#page=4" target="_blank"><img src="./screenshots/thesis-page-04.png" alt="Thesis Page 4"></a>
-<a href="./Thesis-Document.pdf#page=5" target="_blank"><img src="./screenshots/thesis-page-05.png" alt="Thesis Page 5"></a>
-<a href="./Thesis-Document.pdf#page=6" target="_blank"><img src="./screenshots/thesis-page-06.png" alt="Thesis Page 6"></a>
-<a href="./Thesis-Document.pdf#page=7" target="_blank"><img src="./screenshots/thesis-page-07.png" alt="Thesis Page 7"></a>
-<a href="./Thesis-Document.pdf#page=8" target="_blank"><img src="./screenshots/thesis-page-08.png" alt="Thesis Page 8"></a>
-<a href="./Thesis-Document.pdf#page=9" target="_blank"><img src="./screenshots/thesis-page-09.png" alt="Thesis Page 9"></a>
+<details>
+    <summary><b>📖 Show More</b></summary>
+    <br/>
+    <a href="./Thesis-Document.pdf#page=2" target="_blank"><img src="./screenshots/thesis-page-02.png" alt="Thesis Page 2"></a>
+    <a href="./Thesis-Document.pdf#page=3" target="_blank"><img src="./screenshots/thesis-page-03.png" alt="Thesis Page 3"></a>
+    <a href="./Thesis-Document.pdf#page=4" target="_blank"><img src="./screenshots/thesis-page-04.png" alt="Thesis Page 4"></a>
+    <a href="./Thesis-Document.pdf#page=5" target="_blank"><img src="./screenshots/thesis-page-05.png" alt="Thesis Page 5"></a>
+    <a href="./Thesis-Document.pdf#page=6" target="_blank"><img src="./screenshots/thesis-page-06.png" alt="Thesis Page 6"></a>
+    <a href="./Thesis-Document.pdf#page=7" target="_blank"><img src="./screenshots/thesis-page-07.png" alt="Thesis Page 7"></a>
+    <br/>
+    <br/>
+    <details>
+        <summary><b>📖 Show Other References</b></summary>
+        <br/>
+        <a href="./Thesis-Document.pdf#page=8" target="_blank"><img src="./screenshots/thesis-page-08.png" alt="Thesis Page 8"></a>
+        <a href="./Thesis-Document.pdf#page=9" target="_blank"><img src="./screenshots/thesis-page-09.png" alt="Thesis Page 9"></a>
+    </details>
 </details>
 
 ---
