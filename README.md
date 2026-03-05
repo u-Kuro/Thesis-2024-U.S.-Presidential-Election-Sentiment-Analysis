@@ -5,7 +5,7 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 ---
 
 ### 🖥️ Web Application Demo
-[![Web Interface](./screenshots/web-interface.png)](https://u-kuro-sentiment-predictor.hf.space)
+<a href="https://u-kuro-sentiment-predictor.hf.space" target="_blank"><img src="./screenshots/web-interface.png" alt="Web Interface"></a>
 
 **Live Demo:** [https://u-kuro-sentiment-predictor.hf.space](https://u-kuro-sentiment-predictor.hf.space/)  
 **Model:** [https://huggingface.co/u-kuro/sentiment-model](https://huggingface.co/u-kuro/sentiment-model)  
@@ -15,18 +15,19 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 
 ## 📄 Thesis Document
 
-[![Thesis Page 1](./screenshots/thesis-page-01.png)](./screenshots/thesis-page-01.png)
+<a href="./Thesis-Document.pdf#page=1" target="_blank"><img src="./screenshots/thesis-page-01.png" alt="Thesis Page 1"></a>
+
 <details>
 <summary><b>📖 Show More</b></summary>
- 
-[![Thesis Page 2](./screenshots/thesis-page-02.png)](./screenshots/thesis-page-02.png)
-[![Thesis Page 3](./screenshots/thesis-page-03.png)](./screenshots/thesis-page-03.png)
-[![Thesis Page 4](./screenshots/thesis-page-04.png)](./screenshots/thesis-page-04.png)
-[![Thesis Page 5](./screenshots/thesis-page-05.png)](./screenshots/thesis-page-05.png)
-[![Thesis Page 6](./screenshots/thesis-page-06.png)](./screenshots/thesis-page-06.png)
-[![Thesis Page 7](./screenshots/thesis-page-07.png)](./screenshots/thesis-page-07.png)
-[![Thesis Page 8](./screenshots/thesis-page-08.png)](./screenshots/thesis-page-08.png)
-[![Thesis Page 9](./screenshots/thesis-page-09.png)](./screenshots/thesis-page-09.png)
+<br/>
+<a href="./Thesis-Document.pdf#page=2" target="_blank"><img src="./screenshots/thesis-page-02.png" alt="Thesis Page 2"></a>
+<a href="./Thesis-Document.pdf#page=3" target="_blank"><img src="./screenshots/thesis-page-03.png" alt="Thesis Page 3"></a>
+<a href="./Thesis-Document.pdf#page=4" target="_blank"><img src="./screenshots/thesis-page-04.png" alt="Thesis Page 4"></a>
+<a href="./Thesis-Document.pdf#page=5" target="_blank"><img src="./screenshots/thesis-page-05.png" alt="Thesis Page 5"></a>
+<a href="./Thesis-Document.pdf#page=6" target="_blank"><img src="./screenshots/thesis-page-06.png" alt="Thesis Page 6"></a>
+<a href="./Thesis-Document.pdf#page=7" target="_blank"><img src="./screenshots/thesis-page-07.png" alt="Thesis Page 7"></a>
+<a href="./Thesis-Document.pdf#page=8" target="_blank"><img src="./screenshots/thesis-page-08.png" alt="Thesis Page 8"></a>
+<a href="./Thesis-Document.pdf#page=9" target="_blank"><img src="./screenshots/thesis-page-09.png" alt="Thesis Page 9"></a>
 </details>
 
 ---
@@ -44,8 +45,7 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 - PyTorch
 
 **Data Visualization:**
-- Matplotlib
-- Seaborn
+- Matplotlib and Seaborn
 - WordCloud
 - Pandas and NumPy
 
