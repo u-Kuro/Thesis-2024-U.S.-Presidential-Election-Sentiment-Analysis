@@ -36,6 +36,7 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
   <img src="./images/thesis-page-01.png" alt="Thesis Page 1">
 </a>
+<br/>
 <details>
     <summary><b>📖 Show More</b></summary>
     <br/>
