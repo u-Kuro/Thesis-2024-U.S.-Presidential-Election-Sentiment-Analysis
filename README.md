@@ -2,16 +2,18 @@
   <h1 align="center">Political Sentiment Analysis System</h1>
   <div align="center">
     <a href="https://u-kuro-sentiment-predictor.hf.space">
-      <img src="./images/live-demo.svg" alt="Website"/>
+      <img src="./images/live-demo.svg" alt="Website Demo"/>
     </a>
     <a href="https://huggingface.co/spaces/u-kuro/sentiment-predictor/tree/main">
-      <img src="./images/live-demo-repo.svg" alt="Website"/>
+      <img src="./images/demo-repo.svg" alt="Website Demo Repository"/>
     </a>
+  <div align="center">
+  </div>
     <a href="https://huggingface.co/u-kuro/sentiment-model">
-      <img src="./images/model.svg" alt="Website"/>
+      <img src="./images/model.svg" alt="NLP Model"/>
     </a>
     <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
-      <img src="./images/research-paper.svg" alt="Website"/>
+      <img src="./images/thesis-paper.svg" alt="Thesis Paper"/>
     </a>
   </div>
 </div>
@@ -29,26 +31,43 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 
 ---
 
-# 📄 Thesis Document
+# 📄 Thesis Paper
 
-<img src="./images/thesis-page-01.png" alt="Thesis Page 1">
-<br/>
+<a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+  <img src="./images/thesis-page-01.png" alt="Thesis Page 1">
+</a>
 <details>
     <summary><b>📖 Show More</b></summary>
     <br/>
-    <img src="./images/thesis-page-02.png" alt="Thesis Page 2">
-    <img src="./images/thesis-page-03.png" alt="Thesis Page 3">
-    <img src="./images/thesis-page-04.png" alt="Thesis Page 4">
-    <img src="./images/thesis-page-05.png" alt="Thesis Page 5">
-    <img src="./images/thesis-page-06.png" alt="Thesis Page 6">
-    <img src="./images/thesis-page-07.png" alt="Thesis Page 7">
+    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+      <img src="./images/thesis-page-02.png" alt="Thesis Page 2">
+    </a>
+    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+      <img src="./images/thesis-page-03.png" alt="Thesis Page 3">
+    </a>
+    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+      <img src="./images/thesis-page-04.png" alt="Thesis Page 4">
+    </a>
+    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+      <img src="./images/thesis-page-05.png" alt="Thesis Page 5">
+    </a>
+    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+      <img src="./images/thesis-page-06.png" alt="Thesis Page 6">
+    </a>
+    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+      <img src="./images/thesis-page-07.png" alt="Thesis Page 7">
+    </a>
     <br/>
     <br/>
     <details>
         <summary><b>📖 Show Other References</b></summary>
         <br/>
-        <img src="./images/thesis-page-08.png" alt="Thesis Page 8">
-        <img src="./images/thesis-page-09.png" alt="Thesis Page 9">
+        <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+          <img src="./images/thesis-page-08.png" alt="Thesis Page 8">
+        </a>
+        <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+          <img src="./images/thesis-page-09.png" alt="Thesis Page 9">
+        </a>
     </details>
 </details>
 
