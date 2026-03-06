@@ -1,44 +1,60 @@
-# U.S. Political Sentiment Analysis System
+<div align="center">
+  <h1 align="center">Political Sentiment Analysis System</h1>
+  <div align="center">
+    <a href="https://u-kuro-sentiment-predictor.hf.space">
+      <img src="./images/live-demo.svg" alt="Website"/>
+    </a>
+    <a href="https://huggingface.co/spaces/u-kuro/sentiment-predictor/tree/main">
+      <img src="./images/live-demo-repo.svg" alt="Website"/>
+    </a>
+    <a href="https://huggingface.co/u-kuro/sentiment-model">
+      <img src="./images/model.svg" alt="Website"/>
+    </a>
+    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+      <img src="./images/research-paper.svg" alt="Website"/>
+    </a>
+  </div>
+</div>
+
+---
+
+# What Is It
 
 A production-ready sentiment analysis system trained on 2024 U.S. political discourse from YouTube videos. Built with BERT and deployed as a Flask web application on Hugging Face Spaces.
 
 ---
 
-### 🖥️ Web Application Demo
-<a href="https://u-kuro-sentiment-predictor.hf.space" target="_blank"><img src="./screenshots/web-interface.png" alt="Web Interface"></a>
-
-**Live Demo:** [https://u-kuro-sentiment-predictor.hf.space](https://u-kuro-sentiment-predictor.hf.space/)  
-**Model:** [https://huggingface.co/u-kuro/sentiment-model](https://huggingface.co/u-kuro/sentiment-model)  
-**Source Code:** [https://huggingface.co/spaces/u-kuro/sentiment-predictor/tree/main](https://huggingface.co/spaces/u-kuro/sentiment-predictor/tree/main)
+# 🖥️ Live Demo Preview
+<a href="https://u-kuro-sentiment-predictor.hf.space" target="_blank"><img src="./images/web-interface.png" alt="Web Interface"></a>
 
 ---
 
-## 📄 Thesis Document
+# 📄 Thesis Document
 
-<a href="./Thesis-Document.pdf#page=1" target="_blank"><img src="./screenshots/thesis-page-01.png" alt="Thesis Page 1"></a>
+<img src="./images/thesis-page-01.png" alt="Thesis Page 1">
 <br/>
 <details>
     <summary><b>📖 Show More</b></summary>
     <br/>
-    <a href="./Thesis-Document.pdf#page=2" target="_blank"><img src="./screenshots/thesis-page-02.png" alt="Thesis Page 2"></a>
-    <a href="./Thesis-Document.pdf#page=3" target="_blank"><img src="./screenshots/thesis-page-03.png" alt="Thesis Page 3"></a>
-    <a href="./Thesis-Document.pdf#page=4" target="_blank"><img src="./screenshots/thesis-page-04.png" alt="Thesis Page 4"></a>
-    <a href="./Thesis-Document.pdf#page=5" target="_blank"><img src="./screenshots/thesis-page-05.png" alt="Thesis Page 5"></a>
-    <a href="./Thesis-Document.pdf#page=6" target="_blank"><img src="./screenshots/thesis-page-06.png" alt="Thesis Page 6"></a>
-    <a href="./Thesis-Document.pdf#page=7" target="_blank"><img src="./screenshots/thesis-page-07.png" alt="Thesis Page 7"></a>
+    <img src="./images/thesis-page-02.png" alt="Thesis Page 2">
+    <img src="./images/thesis-page-03.png" alt="Thesis Page 3">
+    <img src="./images/thesis-page-04.png" alt="Thesis Page 4">
+    <img src="./images/thesis-page-05.png" alt="Thesis Page 5">
+    <img src="./images/thesis-page-06.png" alt="Thesis Page 6">
+    <img src="./images/thesis-page-07.png" alt="Thesis Page 7">
     <br/>
     <br/>
     <details>
         <summary><b>📖 Show Other References</b></summary>
         <br/>
-        <a href="./Thesis-Document.pdf#page=8" target="_blank"><img src="./screenshots/thesis-page-08.png" alt="Thesis Page 8"></a>
-        <a href="./Thesis-Document.pdf#page=9" target="_blank"><img src="./screenshots/thesis-page-09.png" alt="Thesis Page 9"></a>
+        <img src="./images/thesis-page-08.png" alt="Thesis Page 8">
+        <img src="./images/thesis-page-09.png" alt="Thesis Page 9">
     </details>
 </details>
 
 ---
 
-## 🛠️ Technical Stack
+# 🛠️ Technical Stack
 
 **Data Processing:**
 - Youtube-Search-Python and PyTubeFix
@@ -62,7 +78,7 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 ├── 1) Data Collection/          # YouTube URL collection
@@ -80,8 +96,9 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 ```
 ---
 
-## 🔗 Quick Links
+# 🔗 Quick Links
 
-- **Try the Live App:** [u-kuro-sentiment-predictor.hf.space](https://u-kuro-sentiment-predictor.hf.space/)
-- **View the Model:** [huggingface.co/u-kuro/sentiment-model](https://huggingface.co/u-kuro/sentiment-model)
-- **Browse Source Code:** [huggingface.co/spaces/u-kuro/sentiment-predictor](https://huggingface.co/spaces/u-kuro/sentiment-predictor/tree/main)
+- **Try the Live App:** [u-kuro-sentiment-predictor.hf.space](https://u-kuro-sentiment-predictor.hf.space)
+- **Browse App Source Code:** [huggingface.co/spaces](https://huggingface.co/spaces/u-kuro/sentiment-predictor/tree/main)
+- **View the Model:** [huggingface.co](https://huggingface.co/u-kuro/sentiment-model)
+- **Check the Thesis Paper:** [drive.google.com](https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing)
