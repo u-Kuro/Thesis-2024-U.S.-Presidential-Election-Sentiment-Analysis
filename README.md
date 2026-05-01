@@ -12,7 +12,7 @@
     <a href="https://huggingface.co/u-kuro/sentiment-model">
       <img src="./images/model.svg" alt="NLP Model"/>
     </a>
-    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
       <img src="./images/thesis-paper.svg" alt="Thesis Paper"/>
     </a>
   </div>
@@ -33,7 +33,7 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 
 # 📄 Thesis Paper
 
-<a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+<a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
   <img src="./images/thesis-page-01.png" alt="Thesis Page 1">
 </a>
 <br/>
@@ -41,22 +41,22 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 <details>
     <summary><b>📖 Show More</b></summary>
     <br/>
-    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
       <img src="./images/thesis-page-02.png" alt="Thesis Page 2">
     </a>
-    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
       <img src="./images/thesis-page-03.png" alt="Thesis Page 3">
     </a>
-    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
       <img src="./images/thesis-page-04.png" alt="Thesis Page 4">
     </a>
-    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
       <img src="./images/thesis-page-05.png" alt="Thesis Page 5">
     </a>
-    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
       <img src="./images/thesis-page-06.png" alt="Thesis Page 6">
     </a>
-    <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
       <img src="./images/thesis-page-07.png" alt="Thesis Page 7">
     </a>
     <br/>
@@ -64,10 +64,10 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
     <details>
         <summary><b>📖 Show Other References</b></summary>
         <br/>
-        <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+        <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
           <img src="./images/thesis-page-08.png" alt="Thesis Page 8">
         </a>
-        <a href="https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing">
+        <a href="https://dl.acm.org/doi/epdf/10.1145/3779657.3779678">
           <img src="./images/thesis-page-09.png" alt="Thesis Page 9">
         </a>
     </details>
@@ -122,4 +122,4 @@ A production-ready sentiment analysis system trained on 2024 U.S. political disc
 - **Try the Live App:** [u-kuro-sentiment-predictor.hf.space](https://u-kuro-sentiment-predictor.hf.space)
 - **Browse App Source Code:** [huggingface.co/spaces](https://huggingface.co/spaces/u-kuro/sentiment-predictor/tree/main)
 - **View the Model:** [huggingface.co](https://huggingface.co/u-kuro/sentiment-model)
-- **Check the Thesis Paper:** [drive.google.com](https://drive.google.com/file/d/1YksitKdzOzZMULfgGYYfKn70nlC7ug1K/view?usp=sharing)
+- **Check the Thesis Paper:** [dl.acm.org](https://dl.acm.org/doi/epdf/10.1145/3779657.3779678)
