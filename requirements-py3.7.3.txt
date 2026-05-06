@@ -1,0 +1,24 @@
+# Base Build Tools
+jupyterlab==3.6.8
+setuptools==68.0.0
+wheel==0.42.0
+cython==3.0.11
+
+# Data Preprocessing
+nltk==3.8.1
+spacy==2.1.0
+neuralcoref==4.0
+pandas==1.1.5
+tqdm==4.67.0
+
+# Data Gathering
+torch==1.13.1
+ffmpeg-python==0.2.0
+openai-whisper==20230124
+pytubefix==8.3.2
+
+# URL Collection
+youtube-search-python==1.6.6
+
+# Language Models
+en_core_web_lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.1.0/en_core_web_lg-2.1.0.tar.gz
